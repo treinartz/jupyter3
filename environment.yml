@@ -20,5 +20,6 @@ dependencies:
   - xorg-libxtst
   - pip:
       - py5[jupyter]
+      - py5
 
 
