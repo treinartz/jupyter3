@@ -13,7 +13,14 @@ dependencies:
   - pip
   - shapely>=2.0
   - trimesh>=3.23
-  - openjdk=17  # Add Java 17
+  - py5
+  - openjdk=17
+  - xvfb
+  - xorg
+  - mesa-libgl-cos6-x86_64
+  - xorg-libx11
+  - xorg-libxext
+  - xorg-libxtst
   - pip:
       - py5[jupyter]
 

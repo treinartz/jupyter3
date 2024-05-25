@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Install necessary packages for graphical environment
+apt-get update
+apt-get install -y xvfb x11-apps
+
+# Create a script to start Xvfb
+echo "#!/bin/bash
+Xvfb :99 -screen 0 1024x768x16 &" > start_xvfb.sh
+chmod +x start_xvfb.sh
+./start_xvfb.sh
+
+# Set the DISPLAY environment variable
+export DISPLAY=:99
+
