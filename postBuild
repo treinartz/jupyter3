@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install the py5 Jupyter kernel
-python -m py5_tools.install
+python -m py5jupyter.kernels.py5.install --sys-prefix
 
 # Install necessary packages for graphical environment
 apt-get update
